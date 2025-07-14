@@ -455,7 +455,7 @@
             // Format prices and amounts
             if (lowerColumn.includes('price') || lowerColumn.includes('amount') || lowerColumn.includes('total')) {
                 const dataType = '<span class="data-type number">MONEY</span>';
-                return `$${parseFloat(data).toFixed(2)} ${dataType}`;
+                return `₹${parseFloat(data).toFixed(2)} ${dataType}`;
             }
 
             // Format numbers
