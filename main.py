@@ -63,18 +63,18 @@ def init_db():
     cursor.execute('SELECT COUNT(*) FROM products')
     if cursor.fetchone()[0] == 0:
         sample_products = [
-            ('Apples', 'Fruits', 2.99, 50),
-            ('Bananas', 'Fruits', 1.99, 30),
-            ('Milk', 'Dairy', 3.49, 25),
-            ('Bread', 'Bakery', 2.49, 40),
-            ('Eggs', 'Dairy', 4.99, 20),
-            ('Chicken Breast', 'Meat', 8.99, 15),
-            ('Rice', 'Grains', 5.99, 35),
-            ('Tomatoes', 'Vegetables', 3.99, 45),
-            ('Potatoes', 'Vegetables', 2.79, 60),
-            ('Cheese', 'Dairy', 6.49, 18),
-            ('Pasta', 'Grains', 1.99, 55),
-            ('Orange Juice', 'Beverages', 4.29, 22)
+            ('Apple - 1Kg', 'Fruits', 180, 50),
+            ('Banana - 1 Dozen', 'Fruits', 60, 30),
+            ('Milk - 1L', 'Dairy', 31, 25),
+            ('Bread', 'Bakery', 55, 40),
+            ('Eggs - 1 Dozen', 'Dairy', 75, 20),
+            ('Chicken Breast - 1Kg', 'Meat', 250, 15),
+            ('Rice - 1Kg', 'Grains', 40, 35),
+            ('Tomatoes - 1Kg', 'Vegetables', 30, 45),
+            ('Potatoes - 1Kg', 'Vegetables', 40, 60),
+            ('Cheese - 100g', 'Dairy', 80, 18),
+            ('Pasta - 1Kg', 'Grains', 90, 55),
+            ('Orange Juice - 400Ml', 'Beverages', 33, 22)
         ]
 
         cursor.executemany(
